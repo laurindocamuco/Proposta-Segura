@@ -1,0 +1,6 @@
+{
+  "name": "Gerador de Proposta Flipbook",
+  "description": "Gerador de propostas comerciais e portfólios interativos com visualizador Flipbook 3D, exportador de HTML autônomo, proteções visuais e instalador desktop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

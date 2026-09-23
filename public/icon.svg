@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#F59E0B" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Base Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="white" stroke-opacity="0.1" stroke-width="4"/>
+
+  <!-- Glowing Accent Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.2"/>
+
+  <!-- Flipbook Book Visual -->
+  <g filter="url(#glow)">
+    <!-- Back Page (Spine effect) -->
+    <path d="M120 160 C120 145, 240 135, 256 150 C272 135, 392 145, 392 160 L392 360 C392 375, 272 365, 256 380 C240 365, 120 375, 120 360 Z" fill="#1E293B" stroke="#334155" stroke-width="4"/>
+    
+    <!-- Left Leaf -->
+    <path d="M128 170 C135 158, 240 148, 256 162 L256 368 C240 354, 135 364, 128 352 Z" fill="#F8FAFC"/>
+    
+    <!-- Left Page Lines -->
+    <line x1="155" y1="210" x2="230" y2="204" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/>
+    <line x1="155" y1="245" x2="230" y2="239" stroke="#CBD5E1" stroke-width="6" stroke-linecap="round"/>
+    <line x1="155" y1="280" x2="210" y2="274" stroke="#CBD5E1" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Turning Leaf (3D Curl) -->
+    <path d="M256 162 C290 145, 340 152, 355 175 L355 355 C340 340, 290 350, 256 368 Z" fill="url(#goldGrad)" opacity="0.95"/>
+
+    <!-- Right Static Page -->
+    <path d="M256 162 C272 150, 370 158, 384 170 L384 352 C370 340, 272 348, 256 368 Z" fill="#E2E8F0" opacity="0.85"/>
+  </g>
+
+  <!-- Star / Sparkle of Excellence -->
+  <path d="M375 125 L382 142 L399 149 L382 156 L375 173 L368 156 L351 149 L368 142 Z" fill="#FBBF24"/>
+  <path d="M140 120 L144 130 L154 134 L144 138 L140 148 L136 138 L126 134 L136 130 Z" fill="#F59E0B" opacity="0.8"/>
+</svg>
